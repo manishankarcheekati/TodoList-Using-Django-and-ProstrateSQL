@@ -3,11 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>TodoApp - Django</title>
-  {% load static %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-</head>
+ /head>
 
 <body>
 <div django-app="TaskManager">        
@@ -16,7 +12,7 @@
             <h1>TodoApp</h1>
             <p class="tagline">a Django todo app</p>
             <form action="" method="post">
-            {% csrf_token %} <!-- csrf token for basic security -->
+            {% csrf_token %} 
                 <div class="inputContainer">
                     <input type="text" id="description" class="taskName" placeholder="What do you need to do?" name="description" required>
                     <label for="description">Description</label>
@@ -42,7 +38,7 @@
             
             
             <ul  class="taskList">
-            {% for todo in todos %} <!-- django template lang - for loop -->
+            {% for todo in todos %} 
                 <li class="taskItem">
                     <input type="checkbox" class="taskCheckbox" name="checkedbox" id="{{ todo.id }}" value="{{ todo.id }}">
                     <label for="{{ todo.id }}"><span class="complete-">{{ todo.title }}</span></label>
@@ -52,11 +48,11 @@
             {% endfor %}
             
             
-            </ul><!-- taskList -->
+            </ul>
             </form>
-            </div><!-- content -->
+            </div>
 
- </div><!-- container -->
+ </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>

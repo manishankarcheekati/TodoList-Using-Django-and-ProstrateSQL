@@ -1,11 +1,9 @@
-/* basic reset */
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
 
-/* app */
 html {
     font-size: 100%;
 }
@@ -14,7 +12,6 @@ body {
     background: #b1f6cb;
     font-family: 'Open Sans',sans-serif;
 }
-/* super basic grid structure */
 .container {
     width: 600px;
     margin: 0 auto;
@@ -42,7 +39,6 @@ body {
     background: #fff;
 }
 
-/* logo */
 h1 {
     font-family: 'Rokkitt', sans-serif;
     color: #666;
@@ -61,7 +57,6 @@ h1 {
     color: #777; 
 }
 
-/* inputs */
 .inputContainer {
     height: 60px;
     border-top: 1px solid #e5e5e5;
@@ -324,7 +319,7 @@ footer a {
     -webkit-appearance: none;
             appearance: none;
     cursor: pointer;
-    padding-left: 16.5px; /*specific positioning due to difficult behavior of select element*/
+    padding-left: 16.5px; 
     background: #fff;
 }
 
